@@ -1,0 +1,32 @@
+body{
+	margin-left: auto;
+	margin-right: auto;
+	width: 810px;
+	background-color: #0d54c7;
+	text-align: center;
+	color: #41d572;;
+}
+h1, h4, p{
+	color: #4bacd5;
+}
+button{
+	background-color: rgba(0, 0, 0, 0);
+}
+.title, .main, .bottom{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(62,78,78,0.5);
+}
+
+.music{
+	width: 100%;
+	height: 22px;
+}
+.name, .auther, .note{
+	height: 20px;
+	float: left;
+	border: #00aaff 1px solid;
+}
+.name{width: 24%;}
+.auther{width: 37%;}
+.note{width: 37%;}

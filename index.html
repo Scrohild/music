@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Scrohild的歌单</title>
+		<link rel="stylesheet" href="index.css">
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="title">
+			<br>
+			<h1>Scrohild的歌单</h1>
+			<p>更新于2022.12.05</p>
+			<br>
+		</div>
+		<br>
+		<div class="main">
+			<br>
+			<!-- Xomu, KiraraMagic, Kumi-P等合集 -->
+			<div class="list">
+				<h4>Xomu, KiraraMagic, Kumi-P等合集</h4>
+				<div class="music"">
+					<div class="name">歌曲名</div>
+					<div class="auther">作者</div>
+					<div class="note">备注</div>
+				</div>
+				<div class="music", onclick="play(0, 0)">
+					<div class="name">Ash</div>
+					<div class="auther">KiraraMagic</div>
+					<div class="note"></div>
+				</div>
+				<div class="music", onclick="play(0, 1)">
+					<div class="name">Flourishing Age</div>
+					<div class="auther">KiraraMagic</div>
+					<div class="note">盛世</div>
+				</div>
+				<div class="music", onclick="play(0, 2)">
+					<div class="name">Gloxinia</div>
+					<div class="auther">Xomu</div>
+					<div class="note"></div>
+				</div>
+				<div class="music", onclick="play(0, 3)">
+					<div class="name">Lanterns</div>
+					<div class="auther">Xomu</div>
+					<div class="note"></div>
+				</div>
+				<div class="music", onclick="play(0, 4)">
+					<div class="name">Last Dance</div>
+					<div class="auther">Xomu</div>
+					<div class="note"></div>
+				</div>
+				<div class="music", onclick="play(0, 5)">
+					<div class="name">Night of Bloom</div>
+					<div class="auther">Xomu, KiraraMagic, nayuta</div>
+					<div class="note">绽放之夜</div>
+				</div>
+				<div class="music", onclick="play(0, 6)">
+					<div class="name">Pagoda</div>
+					<div class="auther">Xomu</div>
+					<div class="note"></div>
+				</div>
+				<div class="music", onclick="play(0, 7)">
+					<div class="name">Setsuna</div>
+					<div class="auther">Xomu</div>
+					<div class="note"></div>
+				</div>
+				<div class="music", onclick="play(0, 8)">
+					<div class="name">Tera</div>
+					<div class="auther">Xomu</div>
+					<div class="note"></div>
+				</div>
+				<div class="music", onclick="play(0, 9)">
+					<div class="name">Valhalla</div>
+					<div class="auther">Xomu, Retrograde</div>
+					<div class="note"></div>
+				</div>
+				<div class="music", onclick="play(0, 10)">
+					<div class="name">花月</div>
+					<div class="auther">KiraraMagic</div>
+					<div class="note"></div>
+				</div>
+			</div>
+			
+			<!-- Plum合集 -->
+			<div class="list">
+				<h4>Plum合集</h4>
+				<div class="music"">
+					<div class="name">歌曲名</div>
+					<div class="auther">作者</div>
+					<div class="note">备注</div>
+				</div>
+			</div>
+			
+			<!-- Tobu, F-777等合集 -->
+			<div class="list">
+				<h4>Tobu, F-777等合集</h4>
+				<div class="music"">
+					<div class="name">歌曲名</div>
+					<div class="auther">作者</div>
+					<div class="note">备注</div>
+				</div>
+			</div>
+			
+			<!-- 其他音乐 -->
+			<div class="list">
+				<h4>其他音乐</h4><div class="music"">
+					<div class="name">歌曲名</div>
+					<div class="auther">作者</div>
+					<div class="note">备注</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="bottom">
+			<audio id="player", src=""></audio>
+			<p>直接点击音乐标题即可开始播放</p>
+			<button onclick=window.alert("这个按钮是假的!")>自动播放:关</button>
+		</div>
+	</body>
+</html>
