@@ -1,4 +1,7 @@
-
+// 大致结构:
+// _index[]存储_*[]数组,_*[]数组存储_*_*变量,_*_*存储音乐url
+// 带参方法set(list序号, music序号),播放,并对所选music的div变色
+// _last变量存储上一次所选music的div.id,用于恢复颜色
 
 // _0: Xomu, KiraraMagic, Kumi-P等合集
 var _0_0 = "http://music.163.com/song/media/outer/url?id=1907498364.mp3"
@@ -32,7 +35,7 @@ var _1 = [
 	_1_0, _1_1, _1_2, _1_3, _1_4,
 	_1_5, _1_6, _1_7
 ];
-// _3: Tobu, F-777等合集
+// _2: Tobu, F-777等合集
 var _2_0 = "http://music.163.com/song/media/outer/url?id=1301417907.mp3";
 var _2_1 = "http://music.163.com/song/media/outer/url?id=41644477.mp3";
 var _2_2 = "http://music.163.com/song/media/outer/url?id=28830412.mp3";
@@ -51,16 +54,34 @@ var _2 = [
 	_2_5, _2_6, _2_7, _2_8, _2_9,
 	_2_10, _2_11
 ];
-var _3 = [];
+// _3: 其他
+var _3_0 = "http://music.163.com/song/media/outer/url?id=33922813.mp3";
+var _3_1 = "http://music.163.com/song/media/outer/url?id=462177081.mp3";
+var _3_2 = "http://music.163.com/song/media/outer/url?id=1400281837.mp3";
+var _3_3 = "http://music.163.com/song/media/outer/url?id=406737893.mp3";
+var _3_4 = "http://music.163.com/song/media/outer/url?id=409646391.mp3";
+var _3_5 = "http://music.163.com/song/media/outer/url?id=1474047989.mp3";
+var _3_6 = "http://music.163.com/song/media/outer/url?id=33937527.mp3";
+var _3_7 = "http://music.163.com/song/media/outer/url?id=556204130.mp3";
+
+var _3 = [
+	_3_0, _3_1, _3_2, _3_3, _3_4,
+	_3_5, _3_6, _3_7
+];
 
 var _index = [_0, _1, _2, _3];
-function play(list, music){
-	var _list = _index[list];
-	var _link = _list[music];
+var _new = "0-1";
+var _last = "0-0";
+function set(_list, _music){
+	var _ = _index[_list];
+	var _link = _[_music];
 	
-	document.getElementById("player").src = _link;
-	document.getElementById("player").play();
+	var p = document.getElementById("player");
+	p.src = _link;
+	p.play();
 	
-	// document.getElementsByClassName("music").style.backgroundColor = "#347ebf";
-	// document.getElementById(list + "-" + music).style.backgroundColor = "#777b83";
+	document.getElementById(_last).style.backgroundColor = "#347ebf";
+	document.getElementById(_list + "-" + _music).style.backgroundColor = "#777b83";
+	
+	_last = _list + "-" + _music;
 }
