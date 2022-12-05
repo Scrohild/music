@@ -30,10 +30,11 @@ var _1_4 = "http://music.163.com/song/media/outer/url?id=2002648035.mp3";
 var _1_5 = "http://music.163.com/song/media/outer/url?id=1877153935.mp3";
 var _1_6 = "http://music.163.com/song/media/outer/url?id=1876939087.mp3";
 var _1_7 = "http://music.163.com/song/media/outer/url?id=1877153908.mp3";
+var _1_8 = "http://music.163.com/song/media/outer/url?id=1876939921.mp3";
 
 var _1 = [
 	_1_0, _1_1, _1_2, _1_3, _1_4,
-	_1_5, _1_6, _1_7
+	_1_5, _1_6, _1_7, _1_8
 ];
 // _2: Tobu, F-777等合集
 var _2_0 = "http://music.163.com/song/media/outer/url?id=1301417907.mp3";
