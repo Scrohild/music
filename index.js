@@ -22,7 +22,7 @@ var _0 = [
 	_0_10,
 ];
 // _1: Plum合集
-var _1_0 = "http://ws.stream.qqmusic.qq.com/C400000ujZNW2BO8VY.m4a?guid=172486767&vkey=E693B7CEE28B6022AA2093349148627BD0D32ACE3F528EE521D8F78CF0F9389674F1D43C5A08887515FFF51BD8536B572925FE191F1B29A6&uin=&fromtag=120032";
+var _1_0 = "http://music.163.com/song/media/outer/url?id=1876939145.mp3";
 var _1_1 = "http://music.163.com/song/media/outer/url?id=1987806566.mp3";
 var _1_2 = "http://music.163.com/song/media/outer/url?id=1876939925.mp3";
 var _1_3 = "http://music.163.com/song/media/outer/url?id=1877154230.mp3";
