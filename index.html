@@ -259,8 +259,20 @@
 		</div>
 		<br>
 		<div class="bottom">
-			<audio id="player", src="", controls></audio>
+			<audio id="player", src=""></audio>
+			<br>
 			<p>直接点击音乐标题即可开始播放</p>
+			<div id="axis">
+				<div id="axis-inner"></div>
+			</div>
+			<div id="panel">
+				<div id="pause", class="panel", onclick="ctrl(0);">播放/暂停</div>
+				<div id="loop", class="panel", onclick="ctrl(1);">循环:关</div>
+				<div id="auto", class="panel", onclick="ctrl(2);">自动连播:关</div>
+				<div id="time+", class="panel", onclick="ctrl(3);">快进</div>
+				<div id="time-", class="panel", onclick="ctrl(4);">快退</div>
+			</div>
+			<br>
 		</div>
 	</body>
 </html>
