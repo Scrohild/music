@@ -1,18 +1,13 @@
 body{
 	margin-left: auto;
 	margin-right: auto;
-	width: 810px;
+	width: 800px;
 	background-color: #0d54c7;
 	text-align: center;
 	color: #41d572;;
 }
 h1, h4, p{
 	color: #4bacd5;
-}
-#button{
-	background-color: rgba(0, 0, 0, 0);
-	color: #41d572;
-	border: #00aaff 1px solid;
 }
 .title, .main, .bottom{
 	margin-left: auto;
@@ -21,15 +16,48 @@ h1, h4, p{
 }
 
 .music{
-	width: 100%;
+	width: 800px;
 	height: 22px;
 	background-color: #347ebf;
 }
 .name, .auther, .note{
 	height: 20px;
 	float: left;
+}
+.name{
+	width: 200px;
+	background-color: rgba(10, 10, 10, 0.2);
+}
+.auther{
+	width: 300px;
+	background-color: rgba(20, 20, 20, 0.3);
+}
+.note{
+	width: 300px;
+	background-color: rgba(10, 10, 10, 0.2);
+}
+
+#axis{
+	width: 600px;
+	height: 20px;
+	margin-left: auto;
+	margin-right: auto;
 	border: #00aaff 1px solid;
 }
-.name{width: 25%;}
-.auther{width: 37%;}
-.note{width: 37%;}
+#axis-inner{
+	width: 600px;
+	height: 20px;
+	background-color: #21ba45;
+}
+
+#panel{
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.panel{
+	width: 120px;
+	height: 20px;
+	float: left;
+	background-color: rgba(10, 10, 10, 0.3);
+}
