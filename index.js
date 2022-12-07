@@ -80,9 +80,75 @@ function set(_list, _music){
 	var p = document.getElementById("player");
 	p.src = _link;
 	p.play();
+	setInterval("axis()", 500);
 	
 	document.getElementById(_last).style.backgroundColor = "#347ebf";
 	document.getElementById(_list + "-" + _music).style.backgroundColor = "#777b83";
 	
 	_last = _list + "-" + _music;
+	
+	i = _list;
+	j = _music;
+}
+
+//player播放器控制
+var _auto = false;
+function auto(){
+	var p = document.getElementById("player");
+	if(p.ended){
+		if(j + 1 == _index[i].length){
+			i ++;
+			j = 0;
+		}else{
+			j ++;
+		}
+		set(i ,j);
+	}
+}
+function axis(){
+	var p = document.getElementById("player");
+	var a = document.getElementById("axis-inner");
+	a.style.width = 600*p.currentTime/p.duration + "px";
+}
+function ctrl(_cmd){
+	var p = document.getElementById("player");
+	switch(_cmd){
+		case 0:
+			if(p.paused){
+				p.play();
+			}else{
+				p.pause();
+			}
+		break;
+		case 1:
+			p.loop = !p.loop;
+			if(p.loop){
+				document.getElementById("loop").innerHTML = "循环:开";
+				if(_auto){
+					ctrl(2);
+				}
+			}else{
+				document.getElementById("loop").innerHTML = "循环:关";
+			}
+		break;
+		case 2:
+			if(_auto){
+				_auto = false;
+				document.getElementById("auto").innerHTML = "自动连播:关";
+			}else{
+				_auto = true;
+				document.getElementById("auto").innerHTML = "自动连播:开";
+				if(p.loop){
+					ctrl(1);
+				}
+				setInterval("auto()", 1000);
+			}
+		break;
+		case 3:
+			p.currentTime += 10;
+		break;
+		case 4:
+			p.currentTime -= 10;
+		break;
+	}
 }
