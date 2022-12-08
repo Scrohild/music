@@ -56,8 +56,11 @@ h1, h4, p{
 	margin-right: auto;
 }
 .panel{
-	width: 120px;
+	width: 150px;
 	height: 20px;
 	float: left;
 	background-color: rgba(10, 10, 10, 0.3);
+}
+#currentTime-display, #totalTime-display, #volume-display, #num-display{
+	background-color: rgba(10, 10, 10, 0.1);
 }
