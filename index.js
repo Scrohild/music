@@ -81,6 +81,7 @@ function set(_list, _music){
 	p.src = _link;
 	p.play();
 	setInterval("axis()", 500);
+	setInterval("display()", 500);
 	
 	document.getElementById(_last).style.backgroundColor = "#347ebf";
 	document.getElementById(_list + "-" + _music).style.backgroundColor = "#777b83";
@@ -110,10 +111,18 @@ function axis(){
 	var a = document.getElementById("axis-inner");
 	a.style.width = 600*p.currentTime/p.duration + "px";
 }
+function display(){
+	var p = document.getElementById("player");
+	document.getElementById("currentTime-display").innerHTML = "当前时长" + Math.trunc(p.currentTime);
+	document.getElementById("totalTime-display").innerHTML = "总时长:" + Math.trunc(p.duration);
+	document.getElementById("volume-display").innerHTML = "音量:" + Math.trunc(p.volume*100) + "%";
+	document.getElementById("num-display").innerHTML = "序号:" + i + "-" + j;
+}
 function ctrl(_cmd){
 	var p = document.getElementById("player");
 	switch(_cmd){
 		case 0:
+			// 播放/暂停
 			if(p.paused){
 				p.play();
 			}else{
@@ -121,6 +130,7 @@ function ctrl(_cmd){
 			}
 		break;
 		case 1:
+			// 循环
 			p.loop = !p.loop;
 			if(p.loop){
 				document.getElementById("loop").innerHTML = "循环:开";
@@ -132,6 +142,7 @@ function ctrl(_cmd){
 			}
 		break;
 		case 2:
+			// 自动连播
 			if(_auto){
 				_auto = false;
 				document.getElementById("auto").innerHTML = "自动连播:关";
@@ -145,10 +156,24 @@ function ctrl(_cmd){
 			}
 		break;
 		case 3:
-			p.currentTime += 10;
+			// 下载
+			location.href = p.currentSrc
 		break;
 		case 4:
+			// +10s
+			p.currentTime += 10;
+		break;
+		case 5:
+			// -10s
 			p.currentTime -= 10;
+		break;
+		case 6:
+			// 音量+
+			p.volume += 0.1;
+		break;
+		case 7:
+			// 音量-
+			p.volume -= 0.1;
 		break;
 	}
 }
