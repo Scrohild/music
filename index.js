@@ -113,7 +113,7 @@ function axis(){
 }
 function display(){
 	var p = document.getElementById("player");
-	document.getElementById("currentTime-display").innerHTML = "当前时长" + Math.trunc(p.currentTime);
+	document.getElementById("currentTime-display").innerHTML = "当前时长:" + Math.trunc(p.currentTime);
 	document.getElementById("totalTime-display").innerHTML = "总时长:" + Math.trunc(p.duration);
 	document.getElementById("volume-display").innerHTML = "音量:" + Math.trunc(p.volume*100) + "%";
 	document.getElementById("num-display").innerHTML = "序号:" + i + "-" + j;
