@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -266,12 +267,23 @@
 				<div id="axis-inner"></div>
 			</div>
 			<div id="panel">
+				<div id="currentTime-display", class="panel">当前时长:000</div>
+				<div id="totalTime-display", class="panel">总时长:000</div>
+				<div id="volume-display", class="panel">音量:100%</div>
+				<div id="num-display", class="panel">序号:无</div>
+				<br>
 				<div id="pause", class="panel", onclick="ctrl(0);">播放/暂停</div>
 				<div id="loop", class="panel", onclick="ctrl(1);">循环:关</div>
 				<div id="auto", class="panel", onclick="ctrl(2);">自动连播:关</div>
-				<div id="time+", class="panel", onclick="ctrl(3);">快进</div>
-				<div id="time-", class="panel", onclick="ctrl(4);">快退</div>
+				<div id="rate", class="panel", onclick="ctrl(3);">下载音乐</div>
+				<br>
+				<div id="time+", class="panel", onclick="ctrl(4);">+10秒</div>
+				<div id="time-", class="panel", onclick="ctrl(5);">-10秒</div>
+				<div id="volume+", class="panel", onclick="ctrl(6)">音量+</div>
+				<div id="volume-", class="panel", onclick="ctrl(7)">音量-</div>
 			</div>
+			<br>
+			<br>
 			<br>
 		</div>
 	</body>
