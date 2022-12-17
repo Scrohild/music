@@ -1,5 +1,5 @@
 // _0: Xomu, KiraraMagic, Kumi-P等合集
-var _0_0 = "http://music.163.com/song/media/outer/url?id=1907498364.mp3"
+var _0_0 = "http://music.163.com/song/media/outer/url?id=1907498364.mp3";
 var _0_1 = "http://music.163.com/song/media/outer/url?id=1415070152.mp3";
 var _0_2 = "http://music.163.com/song/media/outer/url?id=1821918070.mp3";
 var _0_3 = "http://music.163.com/song/media/outer/url?id=569962512.mp3";
@@ -91,7 +91,7 @@ function set(_list, _music){
 var _auto = false;
 function auto(){
 	var p = document.getElementById("player");
-	if(p.ended){
+	if(p.ended && _auto){
 		if(j + 1 == _index[i].length){
 			i ++;
 			j = 0;
@@ -138,6 +138,7 @@ function ctrl(_cmd){
 		break;
 		case 2:
 			// 自动连播
+			setInterval("auto()", 1000);
 			if(_auto){
 				_auto = false;
 				document.getElementById("auto").innerHTML = "自动连播:关";
@@ -147,7 +148,6 @@ function ctrl(_cmd){
 				if(p.loop){
 					ctrl(1);
 				}
-				setInterval("auto()", 1000);
 			}
 		break;
 		case 3:
