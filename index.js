@@ -1,8 +1,3 @@
-// 大致结构:
-// _index[]存储_*[]数组,_*[]数组存储_*_*变量,_*_*存储音乐url
-// 带参方法set(list序号, music序号),播放,并对所选music的div变色
-// _last变量存储上一次所选music的div.id,用于恢复颜色
-
 // _0: Xomu, KiraraMagic, Kumi-P等合集
 var _0_0 = "http://music.163.com/song/media/outer/url?id=1907498364.mp3"
 var _0_1 = "http://music.163.com/song/media/outer/url?id=1415070152.mp3";
