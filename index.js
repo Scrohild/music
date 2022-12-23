@@ -48,11 +48,12 @@ var _2_8 = "http://music.163.com/song/media/outer/url?id=1939762974.mp3";
 var _2_9 = "http://music.163.com/song/media/outer/url?id=41644447.mp3";
 var _2_10 = "http://music.163.com/song/media/outer/url?id=1293953588.mp3";
 var _2_11 = "http://music.163.com/song/media/outer/url?id=491686205.mp3";
+var _2_12 = "http://music.163.com/song/media/outer/url?id=1937251481.mp3";
 
 var _2 = [
 	_2_0, _2_1, _2_2, _2_3, _2_4,
 	_2_5, _2_6, _2_7, _2_8, _2_9,
-	_2_10, _2_11
+	_2_10, _2_11, _2_12
 ];
 // _3: 其他
 var _3_0 = "http://music.163.com/song/media/outer/url?id=33922813.mp3";
