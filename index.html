@@ -12,8 +12,8 @@
 		<div class="title">
 			<br>
 			<h1>Scrohild的歌单</h1>
-			<p>更新于2022.12.27 新增一首Plum音乐
-				<br/>上次更新2022.12.24 新增2首音乐
+			<p>更新于2023.01.04
+				<br>新增2首音乐，将默认音量调为30%
 			</p>
 			<br>
 		</div>
@@ -157,6 +157,16 @@
 					<div class="name">별이 보이지 않는 밤</div>
 					<div class="auther">Plum</div>
 					<div class="note">看不见星星的夜晚 (2021 Remake)</div>
+				</div>
+				<div class="music", id="1-13", onclick="set(1, 13)">
+					<div class="name">Lunar Dance</div>
+					<div class="auther">Plum</div>
+					<div class="note">月舞</div>
+				</div>
+				<div class="music", id="1-14", onclick="set(1, 14)">
+					<div class="name">VirtualWorld Diary</div>
+					<div class="auther">Plum</div>
+					<div class="note"></div>
 				</div>
 			</div>
 			
@@ -306,7 +316,7 @@
 			<div id="panel">
 				<div id="currentTime-display", class="panel">当前时长:000</div>
 				<div id="totalTime-display", class="panel">总时长:000</div>
-				<div id="volume-display", class="panel">音量:100%</div>
+				<div id="volume-display", class="panel">音量:30%</div>
 				<div id="num-display", class="panel">序号:无</div>
 				<br>
 				<div id="pause", class="panel", onclick="ctrl(0);">播放/暂停</div>
@@ -323,5 +333,8 @@
 			<br>
 			<br>
 		</div>
+		<script>
+			document.getElementById("player").volume = 0.3;
+		</script>
 	</body>
 </html>
